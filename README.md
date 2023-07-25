@@ -1,6 +1,6 @@
 # Under Construction
 
-This is a simple HTML document with no external dependencies, designed to be used as a temporary home page.
+This is a simple HTML document with no external dependencies, designed to be used as a temporary home page. 
 
 ## Usage
 
