@@ -10,6 +10,12 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><url>
 <loc>https://roosterschool.in/index.html</loc>
 </url>
 <url>
+<loc>https://roosterschool.in/about.html</loc>
+</url>
+<url>
+<loc>https://roosterschool.in/programs.html</loc>
+</url>
+<url>
 <loc>https://roosterschool.in/contact.html</loc>
 </url>
 </urlset>
