@@ -1,0 +1,18 @@
+# humans.txt
+
+/* TEAM */
+Rooster Academy Web Team: RoosterSchool
+Contact: info@roosterschool.in
+Website: https://roosterschool.in/
+
+/* SITE */
+Last update: 2025-08-07
+Standards: HTML5, CSS3, JS, SEO
+Software: Bootstrap, Owl Carousel
+Location: Komarapalayam, Tamil Nadu, India
+
+/* THANKS */
+Thanks to all parents, students, and staff for their support!
+
+/* ENJOY */
+We believe in creative, holistic education for every child.
