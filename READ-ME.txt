@@ -1,5 +1,5 @@
   =>  Template Name    : Kider - Preschool Website Template
-
+  
   =>  Template Link    : https://htmlcodex.com/preschool-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
