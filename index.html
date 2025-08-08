@@ -566,70 +566,40 @@
                   class="h-100 d-flex flex-column justify-content-center p-5"
                 >
                   <h1 class="mb-4">Make Appointment</h1>
-                  <form>
+                  <form id="appointmentForm">
                     <div class="row g-3">
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control border-0"
-                            id="gname"
-                            placeholder="Gurdian Name"
-                          />
+                          <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name" />
                           <label for="gname">Gurdian Name</label>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="email"
-                            class="form-control border-0"
-                            id="gmail"
-                            placeholder="Gurdian Email"
-                          />
+                          <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email" />
                           <label for="gmail">Gurdian Email</label>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control border-0"
-                            id="cname"
-                            placeholder="Child Name"
-                          />
+                          <input type="text" class="form-control border-0" id="cname" placeholder="Child Name" />
                           <label for="cname">Child Name</label>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control border-0"
-                            id="cage"
-                            placeholder="Child Age"
-                          />
+                          <input type="text" class="form-control border-0" id="cage" placeholder="Child Age" />
                           <label for="cage">Child Age</label>
                         </div>
                       </div>
                       <div class="col-12">
                         <div class="form-floating">
-                          <textarea
-                            class="form-control border-0"
-                            placeholder="Leave a message here"
-                            id="message"
-                            style="height: 100px"
-                          ></textarea>
+                          <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                           <label for="message">Message</label>
                         </div>
                       </div>
                       <div class="col-12">
-                        <button
-                          class="btn btn-primary w-100 py-3"
-                          type="submit"
-                        >
-                          Submit
-                        </button>
+                        <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                       </div>
                     </div>
                   </form>
@@ -1016,5 +986,29 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('appointmentForm');
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var gname = document.getElementById('gname').value.trim();
+            var gmail = document.getElementById('gmail').value.trim();
+            var cname = document.getElementById('cname').value.trim();
+            var cage = document.getElementById('cage').value.trim();
+            var message = document.getElementById('message').value.trim();
+            var whatsappMsg =
+              'Appointment Request%0A' +
+              'Guardian Name: ' + gname + '%0A' +
+              'Guardian Email: ' + gmail + '%0A' +
+              'Child Name: ' + cname + '%0A' +
+              'Child Age: ' + cage + '%0A' +
+              'Message: ' + message;
+            var whatsappUrl = 'https://wa.me/919600970747?text=' + encodeURIComponent(whatsappMsg);
+            window.open(whatsappUrl, '_blank');
+          });
+        }
+      });
+    </script>
   </body>
 </html>
